@@ -1,0 +1,335 @@
+/*Reset html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Reset end*/
+
+body{
+    color:#333;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:75%;
+	line-height:1.33;
+}
+html{
+    scroll-behavior: smooth;
+    background: #000;
+    
+}
+
+/* burger button start*/
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div{
+   width: 25px;
+   height: 5px;
+   background-color: #ededed;
+   margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* burger button end*/
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+ul{
+    list-style: none;
+}
+
+/* container for all section*/
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* container end */
+
+/* Header start */
+
+.banner{
+    background: #000;
+    height:  auto;
+    z-index: -1;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+nav{
+    background: #000;
+    display: flex;
+    height: 85px;
+    align-items: center;
+}
+nav li a{
+    margin-left: 35px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header end*/
+/* image banner start */
+.image{
+    position: relative;
+    display: none;
+}
+.image .imageText{
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    line-height: 1.33rem;
+    font-size: 13px;
+
+}
+
+.sliderContainer img{
+    cursor: pointer;
+}
+
+.image img{  
+    width: 100%;
+}
+
+.sliderContainer {
+    width: 100%;
+    position: relative;
+}
+
+#prev{
+    position: absolute;
+    top: 55%;
+    left: 0;
+}
+
+#next{
+    position: absolute;
+    top: 55%;
+    right: 0;
+}
+
+.dots{
+    text-align: center;
+    margin: 1%;
+}
+
+.dot{
+    height: 13px;
+    width: 13px;
+    background: #fff;
+    margin-right: 36px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active{
+    background-color: #be2d00;
+}
+
+.fade{
+    animation: fade 2s;
+}
+
+@keyframes fade{
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* images banner end*/
+
+/* Gallery start*/
+.gallery{
+    background-image: url(./images/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+.photoContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 56px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+
+.photoContainer .box{
+    background: #fff;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.photoContainer .box .imageBox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.photoGallery span{
+    color: #66badf;
+}
+.photoGallery p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+/* Gallery end*/
+/* Scroll top start*/
+.scrollTop{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .5s;
+    z-index: 1000;
+}
+/* Scroll end*/
+/* footer start*/
+footer{
+    text-align: center;
+    padding: 20px;
+}
+/* footer end*/
+
+
+/* Responsive start */
+
+/*Desktop responsive start*/
+
+@media(max-width: 960px){
+    header{
+        padding: 0 20px 0 20px;
+    }
+
+}
+
+@media(max-width: 768px){
+    header{
+        padding: 20px;
+    }
+    .sliderContainer{
+        width: 100%;
+    }
+    .photoContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 40px 
+    }
+    .navMenu{
+        position: absolute;
+        top: 11%;
+        left: 0;
+        width: 100%;
+        background: #ededed;
+        z-index: 9999;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: all 0.3s;  
+        
+    }
+
+    header .logo img{
+        width: 100%;
+    }
+
+    .navMenu.isActive{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+
+    nav ul{      
+        color: #000;
+        display: block;      
+    }
+    nav li{    
+        padding: 40px 0 40px 0;
+        border-bottom: 2px solid #b2b2b2;
+    }
+    nav li a{    
+        color: #000;
+    }
+    nav li a::after{
+        content: ">";
+        float: right;
+        color: #b2b2b2;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,9px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-9px);
+    }
+}
+/*Desktop responsive end*/
+
+/* mobile responsive start */
+@media(max-width: 320px){
+    .sliderContainer{
+        width: 100%;
+    }
+    nav li{    
+        padding: 20px 0 20px 0;
+        border-bottom: 2px solid #b2b2b2;
+    }
+    header .logo img{
+        width: 50%;
+    }
+    #prev{
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 35px;
+    }
+    
+    #next{
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 35px;
+    }
+
+}
+/* mobile responsive end */
+
+  
+   
+
+/* Responsive end */

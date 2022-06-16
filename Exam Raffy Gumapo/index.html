@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header start-->
+    <header id="header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#"><img src="./images/logo.gif" alt="logo"></a>
+                </div>     
+                <!--navigation start-->    
+                <nav>
+                    <div class="navMenu">
+                        <ul>
+                            <li><a href="#">旅を探す</a><span></span></li>
+                            <li><a href="#">旅の準備</a><span></span></li>
+                            <li><a href="#">旅の思い出</a><span></span></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>          
+                <!--navigation end-->
+            </div>              
+        </div>
+    </header>
+    <!--Header end-->
+    <!--main start-->
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="sliderContainer">
+                    <!--image slider start-->
+                    <div class="image fade">
+                        <img src="./images/photo1_pc.jpg" alt="photo1">
+                        <div class="imageText">
+                            <p>スペイン<br>
+                                スペイン、スペイン国またはスペイン王国は、ヨーロッパ南西部のイベリア半島に位置し、同半島の大部分を占…　続きを読む
+                            </p>
+                        </div>    
+                    </div>  
+                    <div class="image fade">
+                        <img src="./images/photo2_pc.jpg" alt="photo1">
+                        <div class="imageText">
+                            <p>ハワイ　ダイアモンドヘッド<br>
+                                ダイヤモンドヘッドは、アメリカ合衆国内ハワイ諸島のオアフ島にある火山。火山活動で噴出した火山砕屑物が…続きを読む</p>
+                        </div>
+                        
+                    </div>
+                    <div class="image fade">
+                        <img src="./images/photo3_pc.jpg" alt="photo1">
+                            <div class="imageText">
+                                <p>イタリア　ヴェネツィア<br>
+                                    ヴェネツィアは、イタリア共和国北東部に位置する都市で、その周辺地域を含む人口約26万人の基礎自治体。…続きを読む</p> 
+                            </div>
+                       
+                    </div>  
+                    <!--image slider end-->
+                    <!--image previos next start--> 
+                    <img id="prev" onclick="showImage(-1)"src="./images/carousel_left.gif" alt="">
+                    <img id="next" onclick="showImage(1)" src="./images/carousel_right.gif" alt="">
+                    <!--image previos next end--> 
+                    <!--dot slider start-->
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <!--dot slider end-->
+                </div>
+                        
+            </div>
+        </section>
+    </main>
+    <!--main end-->
+    <!--Section gallery start-->
+    <section class="gallery">
+        <div class="container">
+            <div class="photoContainer">
+                <div class="box">
+                    <article class="photoGallery">
+                        <div class="imageBox">
+                            <img src="./images/item1.jpg" alt="item1">
+                        </div>  
+                        <p>サントリーニ島<br>
+                            サントリーニ島 もしくは ティーラ島は、エーゲ海のキクラデス諸島南部に位置するギリシャ領の島。かつて…　<span>続きを読む</span></p>
+                    </article>
+                </div>
+                <div class="box">
+                    <article class="photoGallery">
+                        <div class="imageBox">
+                            <img src="./images/item2.jpg" alt="item1">
+                        </div>                
+                        <p>シンガポール<br>
+                            シンガポール共和国、通称シンガポールは、東南アジアの主権都市国家かつ島国である。マレー半島南端、赤道…　<span>続きを読む</span>
+                        </p>
+                    </article>
+                </div>
+                <div class="box">
+                    <article class="photoGallery">
+                        <div class="imageBox">
+                            <img src="./images/item3.jpg" alt="item1">
+                        </div>    
+                        <p>ハワイ　ワイキキビーチ<br>
+                            場所はオアフ島南部に位置し、一般的には、南はママラ湾に面したフォート・デルッシー・ビーチ、ワイキキ・…<span>続きを読む</span>
+                        </p>
+                    </article>
+                </div>
+                <div class="box">
+                    <article class="photoGallery">
+                        <div class="imageBox">
+                            <img src="./images/item4.jpg" alt="item1">
+                        </div>                
+                        <p>タイ　カオサン通り<br>
+                            外国人バックパッカーの溜まり場として知られる。「カオサン」とはタイ語で「白米」の意味だが、元々はこの…<span>続きを読む</span>
+                        </p>
+                    </article>
+                </div>
+                <div class="box">
+                    <article class="photoGallery">
+                        <div class="imageBox">
+                            <img src="./images/item5.jpg" alt="item1">
+                        </div>    
+                        <p>ニューヨーク　タイムズスクエア<br>
+                            タイムズ・スクエアは、アメリカ合衆国ニューヨーク市マンハッタン区ミッドタウンにある繁華街・交差点の名…<span>続きを読む</span>
+                        </p>
+                    </article>
+                </div>
+                <div class="box"> 
+                    <article class="photoGallery">
+                        <div class="imageBox">
+                            <img src="./images/item6.jpg" alt="item1">
+                        </div>                      
+                        <p>スイス<br>
+                            スイス連邦、通称スイスは、ヨーロッパにある連邦共和制国家。永世中立国。 ドイツ、フランス、イタリア、…<span>続きを読む</span>
+                        </p>
+                    </article>
+                </div>   
+                <div class="scrollTop">
+                    <a href="#"><img src="./images/pagetop_pc.gif" alt=""></a>
+                </div>       
+         </div>
+            </div>
+               
+    </section>
+    <!--Section gallery end-->
+    
+    <!--footer start-->
+    <footer>
+        <div class="logo">
+            <a href="#header"><img src="./images/logo.gif" alt="logo"></a>
+        </div>  
+    </footer>
+    <!--footer end-->
+    <!--java script-->
+    <script src="./script.js"></script>
+</body>
+</html>
